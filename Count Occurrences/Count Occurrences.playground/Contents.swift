@@ -26,6 +26,7 @@ func countOccurrences(_ key: Int, array: [Int])-> Int {
         var high = array.count
         while low < high {
             let midIndex = low + (high - low) / 2
+
             if array[midIndex] > key {
                 high = midIndex
             } else {
@@ -37,4 +38,4 @@ func countOccurrences(_ key: Int, array: [Int])-> Int {
     return rightBinary() - leftBinary()
 }
 
-countOccurrences(6, array: array)
+countOccurrences(6, array: array) // 6
